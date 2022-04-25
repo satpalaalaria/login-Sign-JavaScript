@@ -1,4 +1,3 @@
-"use strict";
 /////////////////////Login page////////////////////////////
 
 const btnLogIn=document.getElementById('btnLog');
@@ -14,9 +13,38 @@ const userPassword = getCookies.split(";")[1];
 // console.log(userPassword);
 const userPassword1=userPassword.split("=")[1];
 // console.log(userPassword1);
-btnLogIn.addEventListener('click',()=>{
+// btnLogIn.addEventListener('click',()=>{
+//     let userName2 = document.getElementById('username-login').value;
+//     let password2 = document.getElementById('password-login').value; 
+//     if (userName2 == userDetail1 && password2 == userPassword1) {
+//         // alert('login Successful')
+//         location.href = "/result.html";  
+//         // document.getElementById("demo").innerHTML = "Hello World"; 
+//     }else if(userName2 == ''){
+//         alert("please enter your user name")
+//     }else if (password2 == ''){
+//         alert ("Please enter Password");
+//     }else {
+//         alert('Your Username and Password is incorrect')
+//         // return false;
+//     }
+//  });
+
+
+///////////////////////////////////////////////////////////////////
+function logInValidate() {
     let userName2 = document.getElementById('username-login').value;
-    let password2 = document.getElementById('password-login').value; 
+    let password2 = document.getElementById('password-login').value;
+    // let btnLogIn=document.getElementById('btnLog').innerText;
+    // console.log(btnLogIn);
+
+    // if (userName2 == userDetail1 && password2 == userPassword1) {
+    //     alert('login Successful')
+    //     location.href = "/result.html";   
+    // }else {
+    //     alert('Your Username and Password is incorrect')
+    //     return false;
+    // };
     if (userName2 == userDetail1 && password2 == userPassword1) {
         // alert('login Successful')
         location.href = "/result.html";  
@@ -27,6 +55,7 @@ btnLogIn.addEventListener('click',()=>{
         alert ("Please enter Password");
     }else {
         alert('Your Username and Password is incorrect')
-        // return false;
+        return false;
     }
- });
+
+};
