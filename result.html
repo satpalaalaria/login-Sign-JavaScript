@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        let getDataFrom= JSON.parse(localStorage.getItem('UserFormData'));
+        console.log(getDataFrom);
+    </script>
+    <style>
+         body{
+             background-color: rgb(74, 246, 92);
+         }
+    </style>
+    
+    <title>Welcome to user details page</title>
+</head>
+<body>
+    <hr>
+    <h2>WELCOME TO PROFILE </h2>
+    <hr>
+    <h3>Full Name:-<script>
+        document.write(getDataFrom.FullName);
+    </script></h3>
+    <hr>
+    <h3>User Name:-<script>
+        document.write(getDataFrom.User);
+    </script></h3>
+    <hr>
+    <h3>Gender:-Male</h3>
+    <hr>
+    <h3>Email:-<script>
+        document.write(getDataFrom.Email);
+    </script></h3>
+    <hr>
+    <h3>Date:-<script>
+        var date = getDataFrom.DateofBirth;
+        date = date.split("-").reverse().join("-");
+        // console.log(date);
+        document.write(date);
+    </script></h3>
+    <hr>
+    <h3>Mobile No.:<script>
+        document.write(getDataFrom.Mobile);
+
+    </script></h3><br>
+    <button type="button" onclick=logout()>Logout</button>
+    <button type="button" onclick=deleteAcount()>Delete Account</button>   
+    <script src="/other.js"></script> 
+</body>
+</html>
