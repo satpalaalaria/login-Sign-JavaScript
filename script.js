@@ -1,42 +1,4 @@
 "use strict";
-///////////////////////////////////////LOGIN///////////////////////////////////////////////////////
-
-
-
-// function logInValidate() {
-//     let userName2 = document.getElementById('username-login').value;
-//     let password2 = document.getElementById('password-login').value;
-//     // let btnLogIn=document.getElementById('btnLog').innerText;
-//     // console.log(btnLogIn);
-
-//     // if (userName2 == userDetail1 && password2 == userPassword1) {
-//     //     alert('login Successful')
-//     //     location.href = "/result.html";   
-//     // }else {
-//     //     alert('Your Username and Password is incorrect')
-//     //     return false;
-//     // };
-//     if (userName2 == userDetail1 && password2 == userPassword1) {
-//         // alert('login Successful')
-//         location.href = "/result.html";  
-//         // document.getElementById("demo").innerHTML = "Hello World"; 
-//     }else if(userName2 == ''){
-//         alert("please enter your user name")
-//     }else if (password2 == ''){
-//         alert ("Please enter Password");
-//     }else {
-//         alert('Your Username and Password is incorrect')
-//         return false;
-//     }
-
-// };
-// logInValidate();
-
-
-
-
-
-
 ///////////////////////////////////////SignUp//////////////////////////////////////////////////////////
 /////////////////////////////////////Validation///////////////////////////////////////////////////////
 
@@ -125,9 +87,9 @@ function validate() {
     let emailId=document.getElementById('email').value;
     let dateOfBirth=document.getElementById('dateofbirth').value;
     let countryCode=document.getElementById('cuntry').value;
-    console.log(countryCode);
+    // console.log(countryCode);
     let mobileNo=document.getElementById('mobileno').value;
-    console.log(mobileNo);
+    // console.log(mobileNo);
     const cuntryMobile=`${countryCode}${mobileNo}`;
     // console.log(dateOfBirth);
     // console.log(emailId);
