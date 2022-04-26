@@ -10,7 +10,7 @@ const userDetail1=userDetail.split("=")[1];
 ///////////////////////////////////////
 const userPassword = getCookies.split(";")[1];
 // console.log(userPassword);
-const userPassword1=userPassword.split("=")[1];
+const userPassword1=userPassword?.split("=")[1];
 
 ///////////////////////////////////////////////////////////////////
 const logInValidate =  function() {
