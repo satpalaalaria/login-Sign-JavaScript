@@ -5,12 +5,6 @@ html{
 body {font-family: Arial, Helvetica, sans-serif;
 /* background-image: url(/bgimage.jpg); */
 background-color: #682727;
-
-/* background-image: linear-gradient(rgb(193, 124, 124), rgb(219, 219, 134)); */
-/* width: 95%; */
-/* height: auto; */
-/* background-size: cover; */
-/* background-attachment: fixed; */
 background-size: 100% 100%;
 }
 
@@ -102,6 +96,29 @@ p.log1{
   left: 0; */
   /* width: 100%; */
 /* } */
+span i {
+  position: absolute;
+  right:50px;
+  transform: translate(0,-50%);
+  top: 40%;
+  cursor: pointer;
+}
+
+.password-mainClass{
+  position: relative;
+}
+
+.eyeClass,.mainEye{
+  position: absolute;
+  right:50px;
+  transform: translate(0,-50%);
+  top: 40%;
+  cursor: pointer;
+}
+.mainEye{
+  top: 50%;
+  right: 30px;
+}
 
 
 

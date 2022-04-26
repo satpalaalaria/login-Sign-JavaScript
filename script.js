@@ -1,6 +1,34 @@
 "use strict";
 ///////////////////////////////////////SignUp//////////////////////////////////////////////////////////
+var state=false;
+function toggle(){
+    if(state){
+        document.getElementById('password-signup').setAttribute("type","password");
+        document.getElementById('eye').style.color='#7a797e';
+        state=false;
+    }else{
+        document.getElementById('password-signup').setAttribute("type","text");
+        document.getElementById('eye').style.color='#5887ef';
+        state=true;
+    };
+};
+
+
+var state1=false;
+function toggle1(){
+    if(state1){
+        document.getElementById('password-confrom').setAttribute("type","password");
+        document.getElementById('eye2').style.color='#7a797e';
+        state1=false;
+    }else{
+        document.getElementById('password-confrom').setAttribute("type","text");
+        document.getElementById('eye2').style.color='#5887ef';
+        state1=true;
+    };
+};
+
 /////////////////////////////////////Validation///////////////////////////////////////////////////////
+
 
 /////////////////////Frist Name//////////////////////////////////
 const name_frist=document.getElementById('name-frist');

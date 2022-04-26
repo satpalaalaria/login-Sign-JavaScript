@@ -24,8 +24,9 @@
     <meta property="twitter:description" content="Html answers related to “what to call login signup process in html”. how to make a html login · how to make a html login page · html login page.">
     <meta property="twitter:image" content="https://i.postimg.cc/xqY7J6v0/download.png">
     <title>Login-SignUp Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style.css" />
-    <script defer type="text/javascript" src="/index.js"></script>
+    <script defer type="module" src="/index.js"></script>
 </head>
 <body>
     <!-- <div class="login-main"> -->
@@ -36,9 +37,14 @@
                 <input type="text" placeholder="Enter Username" id="username-login" name="uname">
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" id="password-login" name="psw">
+                <div class="password-mainClass">
+                    <input type="password" placeholder="Enter Password" id="password-login" name="psw">
+                    <span>
+                        <i class="fa fa-eye mainEye" aria-hidden="true" onclick="toggle()" id="eye3"></i>
+                    </span>
+                </div>
 
-                <button type="button" onclick=logInValidate() id="btnLog">Login</button>
+                <button type="button" id="btnLog">Login</button>
                 <!-- <button type="button" id="btnLog" onclick=logInValidate()>Login</button> -->
                 <!-- <button id="myButton" class="float-left submit-button" >Sign-Up</button>     -->
                 <p class="log1">Create New Account Please <a class="signup-name" href="signup.html" style="text-decoration: none;color: red;">Sign-up</a></p>
@@ -46,4 +52,18 @@
         </form>
     <!-- </div> -->    
 </body>
+<script>
+    var state=false;
+    function toggle(){
+    if(this.state){
+        document.getElementById('password-login').setAttribute("type","password");
+        document.getElementById('eye3').style.color='#7a797e';
+        state=false;
+    }else{
+        document.getElementById('password-login').setAttribute("type","text");
+        document.getElementById('eye3').style.color='#5887ef';
+        state=true;
+    };
+};
+</script>
 </html>
