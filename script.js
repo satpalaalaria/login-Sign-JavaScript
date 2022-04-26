@@ -119,6 +119,17 @@ function validate() {
     let mobileNo=document.getElementById('mobileno').value;
     // console.log(mobileNo);
     const cuntryMobile=`${countryCode}${mobileNo}`;
+    const redioButtons=document.querySelectorAll('input[name="gender"]');
+    let selectGender;
+    for(const redioButton of redioButtons ){
+        if(redioButton.checked){
+            selectGender=redioButton.value;
+            break;
+        }
+    };
+    // console.log(selectGender);
+
+
     // console.log(dateOfBirth);
     // console.log(emailId);
     // console.log(fristLastName)
@@ -140,7 +151,7 @@ function validate() {
         }
         setCookie("username", `${userName1}`, "1");
         setCookie("password", `${password1}`, "1");
-        localStorage.setItem("UserFormData",JSON.stringify({"FullName":`${fristLastName}`,"Email":`${emailId}`,"DateofBirth":`${dateOfBirth}`,"User":`${userName1}`,Mobile:`${cuntryMobile}`}));
+        localStorage.setItem("UserFormData",JSON.stringify({"FullName":`${fristLastName}`,"Email":`${emailId}`,"DateofBirth":`${dateOfBirth}`,"User":`${userName1}`,Mobile:`${cuntryMobile}`,Gender:`${selectGender}`}));
         confirm("Signup Successfully and Your Username,password seved in cookie please Login Now");
         location.href = "/home.html";
     };

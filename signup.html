@@ -72,15 +72,20 @@
                 <label for="DOB"><strong>DOB:MM/DD/YYYY:- </strong></label>
                 <input type="date" name="psw" id="dateofbirth" min="2004-04-01" max="2022-04-25">
                 <hr>
-                <label for="Gender"><b>Gender </b>(optional)</label><br>
-                <input type="radio" id="male" name="fav_language" value="HTML">
-                <label for="html">Male</label><br>
-                <input type="radio" id="female" name="fav_language" value="JavaScript">
-                <label for="javascript">Female</label><br>
-                <input type="radio" id="others" name="fav_language" value="JavaScript">
-                <label for="javascript">Others</label><br>
+                <h5><b>Gender </b>(optional)</h5>
+                <div>
+                    <input type="radio" name="gender" value="Male" id="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" value="Female" id="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" value="Other" id="other">
+                    <label for="other">Other</label>
+                </div>    
                 <hr>
-
                 <label for="psw"><b>Email:- </b></label>
                 <div class="form-group">
                     <input type="email" class="form-control" id="email" pattern=".+@globex\.com" size="30"
