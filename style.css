@@ -120,6 +120,25 @@ span i {
   right: 30px;
 }
 
+img.imageclass{
+  width: 20%;
+  height: 20%;
+  border-radius: 10%;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  /* background-image: url("./blank-profile-picture-973460_1280.webp"); */
+  border: 1px solid rgb(204, 200, 200);
+  display: flex;
+  justify-content: center;
+}
+.mainbox-img{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 
 
